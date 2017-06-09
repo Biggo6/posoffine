@@ -48,3 +48,28 @@ customerController = CustomerController.with(MainActivity.this);
 ServerCalls.synRemote
 
 ```
+
+-- Laravel Integration
+
+```
+Route::post('api/synRemote', function(){
+        $all   = request()->all();
+        $total = $all['total'];
+
+        for($i=1; $i<=$total; $i++){
+            
+            $acc_no    = "account_" . $i;
+            $amount_no = "amount_" . $i;
+            $status_no = "status_" . $i;
+
+            $acc       = $all[$acc_no];
+            $amount    = $all[$amount_no];
+            $status    = $all[$status_no];
+           
+           // save to db the customer
+
+        }
+
+        return "OK";
+});
+```
