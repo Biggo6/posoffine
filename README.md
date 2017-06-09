@@ -1,5 +1,5 @@
 
-#Installation in Android Studio
+## Installation in Android Studio
 
 Lets say you have kept aar file in libs folder. ( assume file name is ```izweboffline.aar``` )
 
