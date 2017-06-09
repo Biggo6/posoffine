@@ -28,4 +28,23 @@ Also note that if you are importing a .aar file from another project that has de
 
 
 
+## Usage
 
+In your activity    ```onCreate``` method, 
+
+```
+
+Offline.setBaseUrl("http://192.168.43.73/poss/public/api/");
+customerController = CustomerController.with(MainActivity.this);
+        
+```
+
+## API
+
+- Sync with Remote use the following
+
+```
+
+ServerCalls.synRemote
+
+```
